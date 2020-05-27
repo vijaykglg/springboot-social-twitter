@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+      xmlns:social="https://spring.io/springsocial"
+      xmlns:layout="https://github.com/ultraq/thymeleaf-layout-dialect"
+      layout:decorator="layout">
+<head>
+    <title>Spring Social Twitter</title>
+</head>
+<body>
+<div id="header">
+    <h1><a th:href="@{/}">Spring Social Twitter</a></h1>
+</div>
+<h3>Find Twitter Trends in TOp 10 City In India</h3>
+<div class="container">
+    <form th:action="@{/twitter/trends}" method="get"  class="mt-5">
+        <div class="form-group">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option1" name="woe" class="custom-control-input" value="2295411" th:value="2295411">
+                <label class="custom-control-label" for="option1">Mumbai</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option2" name="woe" class="custom-control-input" value="2295019" th:value="2295019">
+                <label class="custom-control-label" for="option2">Delhi</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option3" name="woe" class="custom-control-input" value="2295424" th:value="2295424">
+                <label class="custom-control-label" for="option3">Chennai</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option4" name="woe" class="custom-control-input" value="2295386" th:value="2295386">
+                <label class="custom-control-label" for="option4">Kollata</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option5" name="woe" class="custom-control-input" value="2211024" th:value="2211024">
+                <label class="custom-control-label" for="option5">Hyderabad</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option6" name="woe" class="custom-control-input" value="2295412" th:value="2295412">
+                <label class="custom-control-label" for="option6">Pune</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option7" name="woe" class="custom-control-input" value="29103194" th:value="29103194">
+                <label class="custom-control-label" for="option7">Ahmedabad</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option8" name="woe" class="custom-control-input" value="2295401" th:value="2295401">
+                <label class="custom-control-label" for="option8">Jaipur</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option9" name="woe" class="custom-control-input" value="2295405" th:value="2295405">
+                <label class="custom-control-label" for="option9">Surat</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="option10" name="woe" class="custom-control-input" value="2295399" th:value="2295399">
+                <label class="custom-control-label" for="option10">Agra</label>
+            </div>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Find Trends</button>
+    </form>
+
+</div>
+</body>
+</html>
